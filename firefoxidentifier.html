@@ -3,15 +3,18 @@
 <head>
 <title>firefox browser identifier</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+body {
+    font-family: monospace;
+}
+</style>
 </head>
 <body>
-<tt>
 using firefox :: <span id="ffstatus"><noscript>javascript must be enabled</noscript></span>
 <img src="chrome://branding/content/icon64.png" onload="ffsuccess()" onerror="fffail()" style="display:none">
 <br>
 <br>
 <span id="err"></span>
-</tt>
 <script type="text/javascript">
 document.getElementById('ffstatus').innerHTML = '...';
 
